@@ -2,7 +2,7 @@ import './App.css';
 import Splash from './components/splash';
 import Header from './components/header'
 import Content from './components/Content';
-import React, {useState} from "react"
+import React from "react"
 
 
 
