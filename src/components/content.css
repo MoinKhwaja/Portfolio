@@ -1,0 +1,313 @@
+.contents {
+    display: block;
+    margin: 0px auto;
+    max-width: 1600px;
+    min-height: 100%;
+    padding-left: 200px;
+    padding-right:200px;
+}
+
+@media  screen and (max-width: 1000px) {
+    .contents {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* hi section*/
+
+.hi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    scroll-snap-align: start;
+    min-height: 100vh;
+    max-width: 1000px;
+    padding-top: 25px;
+}
+
+.one {
+    animation-delay: 3s;
+}
+
+.two {
+    animation-delay: 4s;
+    font-size: clamp(40px,8vw,60px);
+}
+
+.three {
+    animation-delay: 5s;
+    font-size: 12px;
+    
+}
+
+.four {
+    animation-delay: 8s;
+    padding-top: 60px;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.twoText {
+    margin: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+/* about section*/
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0px;
+    max-width: 1000px;
+    height: 80vh;
+    scroll-snap-align: center;
+}
+
+.aboutGrid {
+    max-width: 1000px;
+}
+
+.aboutPic {
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.aboutScroll {
+    font-size: 15px;
+    z-index: -1;
+    overflow-x: hidden;
+    position: relative;
+    right: 300px;
+    bottom: 190px;
+}
+
+.aboutScroll > * {
+    display: flex;
+    animation: 500s linear 0s infinite alternate move;
+}
+
+#scroll {
+    white-space: nowrap;
+}
+
+@media  screen and (max-width: 900px) {
+    .aboutScroll{
+        display: none;
+    }
+}
+
+@keyframes move {
+    
+    0% {
+      transform: translateX(0%);
+      left: 0%;
+    }
+   
+    100% {
+      transform: translateX(-100%);
+      left: 100%;
+    }
+  }
+
+#moin {
+    max-width: 400px;
+    border-radius: 15%;
+}
+
+
+/* work */
+
+.work {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    max-width: 1000px;
+    height: 50vh;
+    scroll-snap-align: center;
+}
+
+.workList {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.workButton {
+  font-weight: 500;
+  border: solid 2px black;
+  outline: 0;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  letter-spacing: .08rem;
+  background-color: white;
+  border-radius: .35rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.workButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .35rem;
+    transition: all .3s ease-in-out;
+    border: 0;
+    box-shadow: 0px 0px 0px 2px black;
+    top: .5rem;
+    left: .5rem;
+}
+
+.workButton:hover::after {
+    top: -0.5rem;
+    left: -0.5rem;
+    width: calc(100% + 0.5rem * 2);
+    height: calc(100% + 0.5rem * 2);
+}
+
+#elek::after {
+    background-color: lightskyblue;
+    z-index: -1;
+}
+
+#elek:active {
+    background-color: lightsteelblue;
+}
+
+#nalas::after {
+    background-color: greenyellow;
+    z-index: -1;
+}
+
+#nalas:active {
+    background-color: lightseagreen;
+}
+
+#sigma::after {
+    background-color: lightsalmon;
+    z-index: -1;
+}
+
+#sigma:active {
+    background-color: pink;
+}
+
+.obj-primary-enter {
+    opacity: 0;
+}
+
+.obj-primary-enter-active {
+    opacity: 1;
+}
+
+.obj-primary-exit {
+    opacity: 1;
+}
+
+.obj-primary-exit-active {
+    opacity: 0;
+}
+  
+.obj-secondary-enter {
+    opacity: 0;
+}
+
+.obj-secondary-enter-active {
+    opacity: 1;
+    transition-delay: 3s;
+}
+
+.obj-secondary-exit {
+    opacity: 1;
+}
+
+.obj-secondary-exit-active {
+    opacity: 0;
+}
+
+model-viewer::part(default-progress-bar) {
+    display: none;
+    visibility: hidden;
+  }
+
+model-viewer {
+    width: 20vh;
+    height: 20vh;
+  }
+
+.model {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
+}
+
+.desc {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.nalasObj {
+    width: 100%;
+}
+
+.desc h2 {
+    font-size: 1.5vh;
+}
+
+.worklink:hover {
+    filter: brightness(1);
+    background-color: rgb(216, 237, 250);
+    border-radius: 5px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+/* projects */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    max-width: 1000px;
+    height: 50vh;
+    scroll-snap-align: center;
+}
+
+.projects h1 {
+    font-size: 50px;
+}
