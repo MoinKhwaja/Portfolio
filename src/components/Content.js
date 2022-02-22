@@ -57,7 +57,7 @@ function Content() {
                 <div>
                     <CSSTransition in={activeObj === 'main'} classNames="obj-primary" timeout={0} unmountOnExit >
                         <div>
-                            <WorkHolder />
+                            <ElekObj />
                         </div>
                     </CSSTransition>
                     <CSSTransition in={activeObj === 'elekObj'} classNames="obj-secondary"  unmountOnExit >
