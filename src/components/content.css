@@ -27,6 +27,7 @@
     padding-top: 25px;
 }
 
+
 .one {
     animation-delay: 3s;
 }
@@ -78,6 +79,16 @@
     animation-name: fadeInUp;
 }
 
+@media screen and (max-width: 390px) {
+
+    .one {
+        font-size: 15px;
+    }
+
+    .four {
+        padding-top: 0px;
+    }
+}
 /* about section*/
 
 .about {
@@ -142,6 +153,21 @@
     border-radius: 15%;
 }
 
+@media screen and (max-width: 390px) {
+
+    .about {
+        padding-top: 300px;
+    }
+
+    #moin {
+        max-width: 250px;
+    }
+
+    .aboutPic {
+        padding-top: 25px;
+        justify-content: center;
+    }
+}
 
 /* work */
 
@@ -296,6 +322,18 @@ model-viewer {
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
+@media screen and (max-width: 390px) {
+
+    .work{
+        padding-top: 600px;
+    }
+
+    .workButton {
+        font-size: 10px;
+        padding: 1rem 0.5rem;
+    }
+}
+
 /* projects */
 
 .projects {
@@ -310,4 +348,11 @@ model-viewer {
 
 .projects h1 {
     font-size: 50px;
+}
+
+@media screen and (max-width: 390px) {
+
+    .projects {
+        padding-top: 200px;
+    }
 }
