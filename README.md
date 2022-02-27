@@ -3,6 +3,7 @@ Portfolio Website
 Built using React (JS/JSX/CSS) with react hooks and css transitions
 
 Credits:
+
 Mainly inspired [Brittany Chiang](https://brittanychiang.com/)
 
 Splash screen designed by [Conor Bailey](https://www.youtube.com/watch?v=2ak37WrbSDg&t=20s)
