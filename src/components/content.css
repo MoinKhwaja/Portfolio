@@ -169,6 +169,13 @@
     }
 }
 
+@media screen and (max-height: 700px) {
+
+    .about {
+        padding-top: 350px;
+    }
+
+}
 /* work */
 
 .work {
@@ -322,6 +329,14 @@ model-viewer {
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
+@media screen and (max-height: 700px) {
+
+    .work {
+        padding-top: 400px;
+    }
+
+}
+
 @media screen and (max-width: 390px) {
 
     .work{
@@ -355,4 +370,12 @@ model-viewer {
     .projects {
         padding-top: 400px;
     }
+}
+
+@media screen and (max-height: 700px) {
+
+    .projects {
+        padding-top: 300px;
+    }
+
 }
