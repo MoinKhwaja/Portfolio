@@ -62,4 +62,14 @@
     #portfolioPic {
         width: 200%;
     }
+
+    .projectsDesc {
+        display: grid;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .projectPara {
+        padding-left: 0px;
+    }
 }
