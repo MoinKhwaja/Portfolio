@@ -1,0 +1,65 @@
+.projectBlock {
+    padding-bottom: 50px;
+}
+
+.projectsObjBlock {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+}
+
+.projectsPhoto {
+    display: inline-flex;
+    width: 150%;
+}
+
+#portfolioPic {
+    width: 100%;
+}
+
+.projectsDesc {
+    display: grid;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.projectName {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.projectPara {
+    padding-left: 20px;
+}
+
+.projectStack {
+    display: flex;
+    justify-content: center;
+}
+
+.projectLink {
+    display: flex;
+    justify-content: center;
+}
+
+#github {
+    width: 30px;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .projectsObjBlock {
+        display: grid;
+    }
+
+    .projectsPhoto {
+        display: inline-flex;
+        width: 50%;
+    }
+
+    #portfolioPic {
+        width: 200%;
+    }
+}

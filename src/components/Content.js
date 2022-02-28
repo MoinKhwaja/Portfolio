@@ -2,10 +2,11 @@ import React, {useState, useRef} from 'react';
 import './content.css';
 import Moin from './files/moin.jpg'
 import {CSSTransition} from 'react-transition-group';
-import WorkHolder from './work/WorkHolder';
 import ElekObj from './work/ElekObj';
 import NalasObj from './work/nalasObj';
 import SigmaObj from './work/sigmaObj';
+import PortfolioObj from './projects/portfolio';
+import PilotPlantObj from './projects/pilotplant';
 
 function Content() {
 
@@ -79,7 +80,8 @@ function Content() {
             </section>
             <section className="projects">
                 <h2>projects.</h2>
-                <h1>👷🚧</h1>
+                <PortfolioObj />
+                <PilotPlantObj />
             </section>
         </div>
         </div>

@@ -355,7 +355,7 @@ model-viewer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 100px 0px;
+    padding: 200px 0px;
     max-width: 1000px;
     height: 50vh;
     scroll-snap-align: center;
@@ -365,10 +365,17 @@ model-viewer {
     font-size: 50px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
 
     .projects {
-        padding-top: 400px;
+        padding-top: 500px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .projects {
+        padding-top: 850px;
     }
 }
 
