@@ -355,7 +355,7 @@ model-viewer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 200px 0px;
+    padding: 500px 0px;
     max-width: 1000px;
     height: 50vh;
     scroll-snap-align: center;
